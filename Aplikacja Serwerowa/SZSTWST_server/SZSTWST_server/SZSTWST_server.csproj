@@ -1,0 +1,115 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <NeutralLanguage>pl-PL</NeutralLanguage>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SZSTWST_Shared\SZSTWST_Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.EntityFrameworkCore">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\MySql.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Extensions">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\System.Windows.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Ubiety.Dns.Core">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZstdNet">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\EFCore6\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{3259aa49-8aa1-44d3-9025-a0b520596a8c}" />
+  </ItemGroup>
+
+</Project>

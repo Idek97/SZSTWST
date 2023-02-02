@@ -1,0 +1,1 @@
+<resources><color name="colorPrimary">#2c3e50</color><color name="colorPrimaryDark">#1B3147</color><color name="colorAccent">#3498db</color><color name="connectingToServer">#cccc00</color><color name="unableToConnect">#cc0000</color><color name="connectedToServer">#00cc00</color><color name="loadingProgressBarBackground">#803498db</color></resources>

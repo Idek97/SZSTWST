@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppThemeWithoutTitleBar"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    tools:ignore="MissingDimension">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginBottom="20px">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/NewAssignmentButton"
+            android:text="New assignment of equipment"
+            android:layout_weight="1"
+            android:layout_marginRight="20px"
+            android:textSize="40px"
+            android:background="@drawable/roundshapebutton"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/MyAssignmentButton"
+            android:text="My Assignments"
+            android:layout_weight="1"
+            android:layout_marginLeft="20px"
+            android:textSize="40px"
+            android:background="@drawable/roundshapebutton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginBottom="20px">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/FixedAssetsListButton"
+            android:text="Fixed Assets List"
+            android:layout_weight="1"
+            android:layout_marginRight="20px"
+            android:textSize="40px"
+            android:background="@drawable/roundshapebutton"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/LogoutButton"
+            android:text="Logout"
+            android:layout_weight="1"
+            android:layout_marginLeft="20px"
+            android:textSize="40px"
+            android:background="@drawable/roundshapebutton"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15px">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/AssetListAdminSettingLayout"
+        android:visibility="gone">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Show only active assets"
+            android:id="@+id/OnlyActiveAssetsCheckBox"
+            android:layout_marginRight="10px"
+            android:checked="true"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Create New Asset"
+            android:layout_toRightOf="@id/OnlyActiveAssetsCheckBox"
+            android:id="@+id/CreteAssetButton"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/AllAssetsRecyclerView"
+        android:scrollbars="vertical"
+        android:layout_below="@id/AssetListAdminSettingLayout"
+        />
+
+</RelativeLayout>
