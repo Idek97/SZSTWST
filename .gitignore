@@ -1,0 +1,7 @@
+#Compilation files
+*.ll
+*.properties
+*.java
+*.cfg
+[Dd]ebug*/
+[Rr]elease*/
