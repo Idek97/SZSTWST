@@ -5,3 +5,7 @@
 *.cfg
 [Dd]ebug*/
 [Rr]elease*/
+*.vsidx
+*.vsidx
+*.vsidx
+*.flag
